@@ -2,7 +2,11 @@
  * @param {string[]} items
  */
 const renderShoppingList = (items) => {
-  // your code
+  const shoppingList = document.querySelector("#shopping-list");
+
+  items.forEach((product) => {
+    shoppingList.insertAdjacentHTML("beforeend", `<li>${product}</li>`);
+  });
 };
 
 // Sample usage - do not modify
